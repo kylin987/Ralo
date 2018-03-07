@@ -21,4 +21,6 @@ if(DEBUG){
 include CORE.'/common/function.php';
 include CORE.'/imooc.php';
 
+spl_autoload_register('\core\imooc::load');
+
 \core\imooc::run();
