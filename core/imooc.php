@@ -4,8 +4,8 @@ namespace core;
 
 class imooc {
 	static public function run(){
-		p('OK');
-		$route = new \core\route();  
+		$route = new \core\lib\route();  
+		
 	}
 	static public function load($class){
 		//自动加载类库		
