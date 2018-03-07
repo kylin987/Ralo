@@ -19,5 +19,6 @@ if(DEBUG){
 }
 
 include CORE.'/common/function.php';
+include CORE.'/imooc.php';
 
-p('1234');
+\core\imooc::run();
