@@ -3,6 +3,7 @@
 namespace core;
 
 class imooc {
+	public $assign;
 	static public function run(){
 		$route = new \core\lib\route();
 		
@@ -27,5 +28,15 @@ class imooc {
 		if(is_file($file)){
 			include $file;
 		}		
+	}
+	public function assign($name,$value){
+		$this->assign[$name] = $value;
+	}
+	public function display($file){
+		$file = APP.'/views/'.$file;
+		extract($this->assign);
+		if(is_file($file)){
+			include $file;
+		}
 	}
 }
