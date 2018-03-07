@@ -34,7 +34,7 @@ class imooc {
 	}
 	public function display($file){
 		$file = APP.'/views/'.$file;
-		extract($this->assign);
+		extract($this->assign); 
 		if(is_file($file)){
 			include $file;
 		}
