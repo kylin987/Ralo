@@ -5,6 +5,8 @@ namespace core;
 class imooc {
 	public $assign;
 	static public function run(){
+		\core\lib\log::init();
+		\core\lib\log::log($_SERVER);
 		$route = new \core\lib\route();
 		
 		$ctrlClass = $route->ctrl;
