@@ -14,11 +14,9 @@ define('MODULE','app');
 define('DEBUG',true);
 
 if(DEBUG){
-	@ini_set('display_error','On');
-	error_reporting(E_ALL ^ E_NOTICE); // 除了notice提示，其他类型的错误都报告
+	ini_set('display_error',1);
 }else{
-	@ini_set('display_error','Off');
-	error_reporting(0); // 把错误报告，全部屏蔽
+	ini_set('display_error','Off');
 }
 
 include CORE.'/common/function.php';
