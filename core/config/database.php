@@ -1,6 +1,9 @@
 <?php
 return array(
-	'DSN' => 'mysql:host=localhost;dbname=blog',
-	'USERNAME' => 'blog',
-	'PASSWD' => 'cheniel125'
+	'database_type' => 'mysql',
+	'database_name' => 'b16ralo',
+	'server' => 'localhost',
+	'username' => 'root',
+	'password' => 'root',
+	'charset' => 'utf8'
 );
