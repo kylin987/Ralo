@@ -12,6 +12,10 @@ class ComposerStaticInitc8ea6692d5e61cba3432164da6880116
     );
 
     public static $prefixLengthsPsr4 = array (
+        'T' => 
+        array (
+            'Twig\\' => 5,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
@@ -24,6 +28,10 @@ class ComposerStaticInitc8ea6692d5e61cba3432164da6880116
     );
 
     public static $prefixDirsPsr4 = array (
+        'Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
@@ -44,6 +52,13 @@ class ComposerStaticInitc8ea6692d5e61cba3432164da6880116
             'Whoops' => 
             array (
                 0 => __DIR__ . '/..' . '/filp/whoops/src',
+            ),
+        ),
+        'T' => 
+        array (
+            'Twig_' => 
+            array (
+                0 => __DIR__ . '/..' . '/twig/twig/lib',
             ),
         ),
     );

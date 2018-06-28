@@ -35,9 +35,14 @@ class imooc {
 	}
 	public function display($file){
 		$file = APP.'/views/'.$file;
-		extract($this->assign); 
 		if(is_file($file)){
-			include $file;
+			$loader = new \Twig_loader_Filesystem(APP.'/views');
+			$twig = new \Twig_Environment($loader,array(
+				'cache' => IMOOC.'cache',
+				'debug' => DEBUG
+			));
+			$template = $twig->loadTemplate($file);
+			$template->display($this->assign ? $this->assign : '');
 		}
 	}
 }
